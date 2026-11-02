@@ -1,47 +1,73 @@
-# BMI Calculator (JavaFX)
+BMI Calculator
 
-A simple desktop BMI (Body Mass Index) calculator built with Java 17 and JavaFX.
+A simple desktop application for calculating Body Mass Index (BMI), built using Java and JavaFX.
 
-## Features
-- Enter weight in kilograms (kg).
-- Enter height in centimeters (cm).
-- Calculate BMI automatically.
-- Display BMI value and category: Underweight, Normal weight, Overweight, or Obesity.
-- Reset the input and result.
-- Validate empty, non-numeric, and invalid values.
+About The Project
 
-## Requirements
-- JDK 17 or newer
-- Apache Maven 3.8 or newer
-- Internet connection on the first run so Maven can download JavaFX dependencies
+BMI Calculator is a desktop-based application developed as part of an introductory JavaFX GUI project.
 
-## How to Run
-1. Install JDK 17+ and Maven.
-2. Open a terminal in the project folder (the folder containing `pom.xml`).
-3. Run:
+This application allows users to calculate their Body Mass Index based on their weight and height, then displays the calculation result along with the corresponding BMI category.
 
-   ```bash
-   mvn clean javafx:run
-   ```
+Features
 
-## BMI Formula
-BMI = weight (kg) / (height (m) × height (m))
+- Weight Input: Enter body weight in kilograms (kg).
+- Height Input: Enter body height in centimeters (cm).
+- BMI Calculation: Automatically calculates BMI using the entered values.
+- BMI Classification: Displays the BMI value and its category.
+- Input Validation: Handles invalid or incomplete input.
+- Reset Button: Clears the input fields and resets the result.
 
-The application converts height from centimeters to meters before calculating BMI.
+Built With
 
-## BMI Categories
-- Underweight: BMI below 18.5
-- Normal weight: BMI from 18.5 to below 25
-- Overweight: BMI from 25 to below 30
-- Obesity: BMI 30 or above
+- Java
+- JavaFX
+- Apache Maven
+- NetBeans IDE
 
-These are general adult BMI categories and are not a medical diagnosis.
+Application Screenshots
 
-## Screenshot
-After running the application, take a screenshot of the application window and save it as:
+1. Main Interface
 
-`screenshots/bmi-calculator.png`
+"BMI Calculator Main Interface" (screenshots/tampilan-awal.png)
 
-The screenshot will then appear here:
+2. BMI Calculation Result
 
-![BMI Calculator Screenshot](screenshots/bmi-calculator.png)
+"BMI Calculation Result" (screenshots/hasil-perhitungan.png)
+
+BMI Formula
+
+The application uses the following formula:
+
+BMI = Weight (kg) / Height (m)²
+
+Height is converted from centimeters to meters before the calculation.
+
+Project Structure
+
+
+How to Run
+
+Requirements
+
+- Java Development Kit (JDK) 17 or newer
+- Apache Maven
+
+Installation
+
+1. Clone this repository:
+
+git clone https://github.com/mjovanfadillah/BMI-Calculator.git
+
+2. Navigate to the project directory:
+
+cd BMI-Calculator
+
+3. Run the application using Maven:
+
+mvn clean javafx:run
+
+4. The BMI Calculator application will open.
+
+Purpose
+
+This project was created to practice fundamental Java programming concepts and graphical user interface development using JavaFX.
